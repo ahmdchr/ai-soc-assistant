@@ -39,5 +39,5 @@ app/
 rules/
 data/
 ```
-## 📜 Licens
+## 📜 License
 MIT
