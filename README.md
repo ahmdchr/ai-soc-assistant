@@ -22,13 +22,13 @@ An end-to-end **SIEM/SOAR-style cybersecurity platform** that ingests Suricata I
 ```bash
 pip install -r requirements.txt
 uvicorn app.web.api:app --reload
-
+```
 ## 🧪 Test ingestion
 ```bash
 curl -X POST http://127.0.0.1:8000/ingest \
   -H "Content-Type: application/json" \
   -d '{ "source": "suricata", "raw": { "alert": { "severity": 1 }}}'
-
+```
 ## 📂 Project Structure
 ```bash
 app/
@@ -38,6 +38,6 @@ app/
   web/
 rules/
 data/
-
+```
 ## 📜 Licens
 MIT
